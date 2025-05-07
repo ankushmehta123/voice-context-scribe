@@ -5,11 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Edit, Trash2 } from 'lucide-react';
 
 // Mock data for demonstration purposes
-const mockSpeeches = [
-  { id: 1, title: 'Sales Call Script', date: '2025-05-07', context: 'Sales Call' },
-  { id: 2, title: 'Customer Support Response', date: '2025-05-06', context: 'Customer Support' },
-  { id: 3, title: 'Interview Preparation', date: '2025-05-05', context: 'Interview' },
-];
+const mockSpeeches: { id: number; title: string; date: string; context: string }[] = [];
 
 const Library = () => {
   const handleEdit = (id: number) => {
