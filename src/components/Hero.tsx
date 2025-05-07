@@ -11,7 +11,7 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 py-20 md:py-28">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-gradient">
             Perfect Your Speech with <span className="gradient-text">AI-Powered</span> Optimization
           </h1>
           
@@ -30,14 +30,14 @@ const Hero = () => {
             <Button 
               variant="outline" 
               size="lg"
-              className="px-8 py-6 text-lg"
+              className="px-8 py-6 text-lg border-white/20 bg-white/5 text-white hover:bg-white/10"
             >
               See How It Works
             </Button>
           </div>
           
           <div className="mt-12 md:mt-16">
-            <div className="bg-white/50 backdrop-blur-sm border border-border/60 rounded-xl shadow-lg p-6 md:p-8 animate-float">
+            <div className="glass-card rounded-xl shadow-lg p-6 md:p-8 animate-float">
               <div className="flex items-center mb-4">
                 <div className="h-3 w-3 rounded-full bg-red-500 mr-2"></div>
                 <div className="h-3 w-3 rounded-full bg-yellow-500 mr-2"></div>
@@ -45,8 +45,8 @@ const Hero = () => {
                 <div className="ml-4 text-xs text-muted-foreground">SpeechCraft AI</div>
               </div>
               <div className="space-y-3">
-                <div className="bg-muted/50 p-3 rounded-lg">
-                  <p className="text-sm text-left">
+                <div className="bg-brand-dark-card p-3 rounded-lg">
+                  <p className="text-sm text-left text-white/80">
                     "I believe I would be a good fit for this position because I have experience..."
                   </p>
                   <div className="flex justify-end">
@@ -55,7 +55,7 @@ const Hero = () => {
                 </div>
                 
                 <div className="bg-gradient-to-r from-brand-purple/10 to-brand-blue/10 p-3 rounded-lg">
-                  <p className="text-sm text-left font-medium">
+                  <p className="text-sm text-left font-medium text-white">
                     "I'm confident I'm an excellent fit for this role, as my 5+ years of experience in similar environments has equipped me with the precise skills outlined in your job description..."
                   </p>
                   <div className="flex justify-end">
