@@ -1,23 +1,22 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const CTA = () => {
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-r from-brand-purple to-brand-blue text-white">
-      <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          Ready to Perfect Your Communication?
-        </h2>
-        <p className="text-lg md:text-xl opacity-90 max-w-2xl mx-auto mb-8">
-          Join thousands of professionals using SpeechCraft to enhance their verbal communication for interviews, sales, customer service, and more.
+    <section className="py-16 px-4">
+      <div className="container mx-auto max-w-4xl bg-white/5 backdrop-blur-lg rounded-2xl p-10 border border-white/10 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-white/70">Ready to Transform Your Speech?</h2>
+        <p className="text-white/70 mb-8 max-w-2xl mx-auto">
+          Start enhancing your communication skills today with our AI-powered speech optimization platform. Perfect for interviews, sales calls, and customer interactions.
         </p>
         <Button 
-          variant="secondary" 
-          size="lg"
-          className="px-8 py-6 text-lg bg-white text-brand-purple hover:bg-white/90"
+          size="lg" 
+          className="bg-gradient-to-r from-brand-purple to-brand-blue hover:opacity-90 transition-opacity text-white"
+          asChild
         >
-          Get Started For Free
+          <Link to="/dashboard">Get Started For Free</Link>
         </Button>
       </div>
     </section>

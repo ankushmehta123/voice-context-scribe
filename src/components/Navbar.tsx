@@ -25,15 +25,15 @@ const Navbar = () => {
           <Button 
             variant="ghost" 
             className="hidden md:block text-white hover:bg-white/10"
-            onClick={() => console.log("Sign in clicked")}
           >
             Sign in
           </Button>
           <Button 
             className="bg-gradient-to-r from-brand-purple to-brand-blue hover:opacity-90 transition-opacity text-white"
             onClick={() => console.log("Get started clicked")}
+            asChild
           >
-            Get Started
+            <Link to="/dashboard">Get Started</Link>
           </Button>
         </div>
       </div>
